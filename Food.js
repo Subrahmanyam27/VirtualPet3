@@ -21,15 +21,7 @@ class Food{
     display(){
         background(46,139,87);
 
-        fill("white");
-        textSize(50);
-        if (lastFed >= 12) {
-            text("Last Feed : " + lastFed % 12 + " PM", 110, 70);
-        } else if (lastFed == 0) {
-            text("Last Feed : 12 AM", 110, 70);
-        } else {
-            text("Last Feed : " + lastFed + " AM", 110, 70);
-        }
+        
 
         var x = 50,
             y = 100;
@@ -46,6 +38,15 @@ class Food{
                 image(this.milk,x,y,100,100);
                 x = x+50;
             }
+        }
+        fill("white");
+        textSize(50);
+        if (lastFed >= 12) {
+            text("Last Feed : " + lastFed % 12 + " PM", 110, 70);
+        } else if (lastFed == 0) {
+            text("Last Feed : 12 AM", 110, 70);
+        } else {
+            text("Last Feed : " + lastFed + " AM", 110, 70);
         }
     }
     bedroom(){
