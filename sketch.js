@@ -65,7 +65,6 @@ function draw() {
    }else{
     update("Hungry")
     foodObj.display();
-    //foodObj.bedroom();
    }
 
   if(gameState!="Hungry"){
